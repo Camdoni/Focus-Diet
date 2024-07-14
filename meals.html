@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.output{
+    font-size:15px;;
+}
+#altFoodInput{
+    height:60px;
+    font-size: 35px;
+    text-align:center;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Diet</title>
+    <link rel="stylesheet" type="text/css" href="looks.css" />
+</head>
+<script src="important.js"></script>
+</script>
+<body>
+    
+    <div class="white-box">
+        <header>
+            <h1>Focus Diet</h1>
+        </header>
+        <body>
+            <nav>
+                <a class="nav-link" href="http://localhost:5500/main.html"> Home </a>
+                <a class="nav-link" href="http://localhost:5500/meals.html"> Meals </a>
+                <a class="nav-link" href="http://localhost:5500/motivation.html"> Motivation </a>
+                <a class="nav-link" href="http://localhost:5500/tips.html"> Tips </a>
+            </nav>
+
+    <div id="nutritionResults"></div>
+            <div class="white-box">
+                <center>
+                    <h2> Healthy Meal Alternatives</h2>                  
+                </center>
+            <!-- Form with a text input field -->
+    <form onsubmit="getOpenAIResponse(event)">
+        <label for="altFoodInput">Enter a food alternative:</label>
+        <input type="text" id="altFoodInput" name="altFoodInput" placeholder="Enter Something That You Are Craving!" required>
+        <center>
+        <!-- Button to trigger the OpenAI request -->
+        <button class="green-button" type="submit">Get Alternative</button>
+    </center>
+    </form>
+    <div class = "output">
+    <!-- Display area for the OpenAI response -->
+    <div id="outputArea"></div>
+--------------------------------------------------------------------
+    <!-- Display area for user input nutritional information -->
+    <div class = "user" id="userNutritionResults"></div>
+--------------------------------------------------------------------
+    <!-- Display area for AI response nutritional information -->
+    <div class = "ai" id="aiNutritionResults"></div>
+    </div>
+</center>
+            <img src="https://i.imgur.com/XwnUzlX.jpg" alt="" style="width:100%;height:1000px;"></img>
+    
+        
+    <!-- Display area for the OpenAI response -->
+    <div class="white-box"></div>
+
+        </body>
+ <footer>
+        &copy; 2024 Norforthew. All rights reserved.
+    </footer>
+</body>
+</html>

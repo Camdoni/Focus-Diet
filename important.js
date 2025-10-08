@@ -1,7 +1,7 @@
 // Function to make OpenAI request
 async function fetchOpenAIResponse(altFood) {
     // Your OpenAI API key (replace with your actual key)
-    const apiKey = "sk-proj-GXBqEE3NUmj80IXY4GgPT3BlbkFJFimv73djLwjq9mf9SsKX";
+    const apiKey = "";
 
     // Make OpenAI request
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
